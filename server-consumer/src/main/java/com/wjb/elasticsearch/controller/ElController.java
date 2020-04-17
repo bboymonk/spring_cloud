@@ -81,7 +81,7 @@ public class ElController {
         }
     }
     @RequestMapping("el/getIndex")
-    public String getIndex(HttpServletRequest r,String index, String id){
+    public String getIndex(HttpServletRequest r,String index, String id,String query){
         try {
             GetRequest request = new GetRequest(index,id);
             //为特定字段配置源排除
@@ -91,8 +91,8 @@ public class ElController {
             request.fetchSourceContext(fetchSourceContext);
             request.storedFields("name");
             GetResponse getResponse = client.get(request, RequestOptions.DEFAULT);
-            String name = getResponse.getField("name").getValue();
-            return name;
+            String result = getResponse.getField(query).getValue();
+            return result;
         } catch (Exception e) {
             logger.error("get index error",e);
             return "get index error";
