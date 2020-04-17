@@ -2,11 +2,23 @@ package com.wjb.elasticsearch.service;
 
 import com.wjb.elasticsearch.model.HighLevelRestClientObject;
 import com.wjb.util.PageResult;
+import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.RestClient;
 
 import java.util.List;
+import java.util.Map;
 
-public interface BaseMethod<T> {
+public interface ElClientService<T> {
+
+    /**
+     * 创建索引
+     * @param id
+     * @param index
+     * @param map
+     * @return
+     */
+    IndexRequest createIndex(String id, String index, Map<String,Object> map);
+
     /**
      * 关闭连接
      */

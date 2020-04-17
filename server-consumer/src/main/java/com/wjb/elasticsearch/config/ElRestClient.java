@@ -13,9 +13,9 @@ import java.util.stream.Stream;
 
 
 @Configuration
-public class ElasticSearchRestClient {
+public class ElRestClient {
 
-    @Value("${spring.data.elasticsearch.cluster-nodes}")
+    @Value("${server.ip}")
     private String[] ips;
 
     @Bean
