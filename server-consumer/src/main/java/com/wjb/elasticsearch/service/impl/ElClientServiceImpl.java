@@ -8,10 +8,12 @@ import com.wjb.util.PageResult;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class ElClientServiceImpl<T> implements ElClientService<T> {
 
 

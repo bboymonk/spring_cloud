@@ -1,2 +1,7 @@
 server:
   port: 9001
+  ip: 127.0.0.1
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9200
