@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="serverconsumer" />
-        <module name="serverprovider" />
-        <module name="spring_cloud_config" />
-        <module name="spring_cloud_fegin" />
-        <module name="springcloudeureka" />
-        <module name="springcloudzuul" />
+        <module name="server_consumer" />
+        <module name="server_provider" />
+        <module name="springcloud_config" />
+        <module name="springcloud_eureka" />
+        <module name="springcloud_fegin" />
+        <module name="springcloud_zuul" />
       </profile>
     </annotationProcessing>
   </component>

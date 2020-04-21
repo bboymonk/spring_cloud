@@ -2,11 +2,11 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/server-consumer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/server-provider" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-eureka" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-zuul" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring_cloud_config" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring_cloud_fegin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server_consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_fegin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_zuul" charset="UTF-8" />
   </component>
 </project>
