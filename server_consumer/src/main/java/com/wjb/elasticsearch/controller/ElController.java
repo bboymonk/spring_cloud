@@ -1,6 +1,8 @@
 package com.wjb.elasticsearch.controller;
 
+import com.wjb.elasticsearch.model.HighLevelRestClientObject;
 import com.wjb.elasticsearch.service.ElClientService;
+import com.wjb.util.PageResult;
 import org.elasticsearch.action.DocWriteResponse;
 import org.elasticsearch.action.get.GetRequest;
 import org.elasticsearch.action.get.GetResponse;
@@ -9,8 +11,6 @@ import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.support.replication.ReplicationResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.common.Strings;
-import org.elasticsearch.search.fetch.subphase.FetchSourceContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,16 +37,16 @@ public class ElController {
     public void createIndex(){
         try {
             Map<String,Object> map = new HashMap<String,Object>();
-            map.put("name","wjb");
+            map.put("name","wjb ok good nice");
             map.put("age","20");
             map.put("sex","boy");
-            IndexRequest indexRequest = elClientService.createIndex("1", "firstindex", map);
+            IndexRequest indexRequest = elClientService.createIndex("1", "bboy", map);
             //同步方式
             IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
 
             String index = indexResponse.getIndex();
             String id = indexResponse.getId();
-            System.out.println(index+",,,,"+id);
+            System.out.println(index+"==="+id);
             if (indexResponse.getResult() == DocWriteResponse.Result.CREATED) {
 
             } else if (indexResponse.getResult() == DocWriteResponse.Result.UPDATED) {
@@ -84,18 +84,25 @@ public class ElController {
     public String getIndex(HttpServletRequest r,String index, String id,String query){
         try {
             GetRequest request = new GetRequest(index,id);
-            //为特定字段配置源排除
-            String[] includes = Strings.EMPTY_ARRAY;
-            String[] excludes = new String[]{"name"};
-            FetchSourceContext fetchSourceContext = new FetchSourceContext(true, includes, excludes);
-            request.fetchSourceContext(fetchSourceContext);
-            request.storedFields("name");
             GetResponse getResponse = client.get(request, RequestOptions.DEFAULT);
             String result = getResponse.getField(query).getValue();
             return result;
         } catch (Exception e) {
             logger.error("get index error",e);
             return "get index error";
+        }
+    }
+
+    @RequestMapping("el/search")
+    public String search(HttpServletRequest request,String index, String id,String keyWord){
+        try {
+            HighLevelRestClientObject highLevelRestClientObject = new HighLevelRestClientObject();
+            highLevelRestClientObject.setKeyword(keyWord);
+            PageResult search = elClientService.search(highLevelRestClientObject);
+            return null;
+        } catch (Exception e) {
+            logger.error("get index error",e);
+            return "null";
         }
     }
 

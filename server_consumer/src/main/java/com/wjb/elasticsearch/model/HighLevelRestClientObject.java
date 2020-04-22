@@ -3,7 +3,9 @@ package com.wjb.elasticsearch.model;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
+import org.springframework.stereotype.Component;
 
+@Component
 public class HighLevelRestClientObject {
 
     //当前页
@@ -15,6 +17,29 @@ public class HighLevelRestClientObject {
     //搜索关键字
     protected String keyword;
 
+    public Integer getCurrentPage() {
+        return currentPage;
+    }
+
+    public void setCurrentPage(Integer currentPage) {
+        this.currentPage = currentPage;
+    }
+
+    public Integer getPageSize() {
+        return pageSize;
+    }
+
+    public void setPageSize(Integer pageSize) {
+        this.pageSize = pageSize;
+    }
+
+    public String getKeyword() {
+        return keyword;
+    }
+
+    public void setKeyword(String keyword) {
+        this.keyword = keyword;
+    }
 
     //开始的记录数
     public Integer getStart(){
@@ -53,4 +78,6 @@ public class HighLevelRestClientObject {
     public void setHighlightFields(Object obj, SearchHit hit){
 
     }
+
+
 }

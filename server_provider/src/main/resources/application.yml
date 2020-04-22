@@ -2,7 +2,7 @@ server:
   port: 8001
 spring:
   application:
-    name: Test-provider   #服务名称，随意取
+    name: Test-provider   #服务名称
 eureka:
   client:
     service-url:
