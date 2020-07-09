@@ -53,6 +53,6 @@ public interface ElClientService<T> {
     /**
      * 搜索
      */
-    PageResult search(HighLevelRestClientObject qo) throws Exception;
+    List<String> search(HighLevelRestClientObject qo,String index) throws Exception;
 
 }

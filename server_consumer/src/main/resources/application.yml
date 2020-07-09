@@ -1,6 +1,5 @@
 server:
-  port: 9001
-  ip: 127.0.0.1
+  port
 spring:
   data:
     elasticsearch:

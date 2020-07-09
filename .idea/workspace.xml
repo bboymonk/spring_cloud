@@ -4,9 +4,10 @@
     <list default="true" id="d4c20f08-a854-4122-ba3b-c82f8d97e55c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/controller/ElController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/controller/ElController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/model/HighLevelRestClientObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/model/HighLevelRestClientObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/ElClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/ElClientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/impl/ElClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/impl/ElClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server_provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server_consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_consumer/target/classes/application.yml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,7 +27,62 @@
     <favorites_list name="springcloudparent" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/controller/ElController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server_consumer/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server_provider/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/ElClientService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/impl/ElClientServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1386">
+              <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -84,9 +140,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/server-consumer/src/main/java/com/wjb/elasticsearch/controller/ElController.java" />
         <option value="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/model/HighLevelRestClientObject.java" />
-        <option value="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/impl/ElClientServiceImpl.java" />
-        <option value="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/controller/ElController.java" />
         <option value="$PROJECT_DIR$/server_provider/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/ElClientService.java" />
+        <option value="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/controller/ElController.java" />
+        <option value="$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/impl/ElClientServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server_consumer/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -117,8 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,6 +186,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -139,7 +197,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587528631423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587537622919" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -233,8 +291,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application_Consumer" />
-        <item itemvalue="Spring Boot.Application_Feign" />
         <item itemvalue="Spring Boot.Application_Provider" />
+        <item itemvalue="Spring Boot.Application_Feign" />
         <item itemvalue="Spring Boot.ApplicationEureka" />
       </list>
     </recent_temporary>
@@ -258,7 +316,9 @@
       <workItem from="1587436030579" duration="2330000" />
       <workItem from="1587441156499" duration="687000" />
       <workItem from="1587443135949" duration="7276000" />
-      <workItem from="1587528303137" duration="565000" />
+      <workItem from="1587528303137" duration="3632000" />
+      <workItem from="1589374563952" duration="11000" />
+      <workItem from="1594283640763" duration="282000" />
     </task>
     <task id="LOCAL-00001" summary="elasticsearch">
       <created>1587031507353</created>
@@ -295,11 +355,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587444000025</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="elasticsearch">
+      <created>1587528882907</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587528882907</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35752000" />
+    <option name="totallyTimeSpent" value="39112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -312,8 +379,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49624062" visible="true" weight="0.21709532" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49624062" weight="0.27382752" />
       <window_info id="Structure" order="1" sideWeight="0.5037594" side_tool="true" weight="0.28290468" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -324,7 +392,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6877133" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5767918" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.6023891" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32935154" />
@@ -348,7 +416,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49624062" visible="true" weight="0.2927383" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49624062" visible="true" weight="0.27382752" />
       <window_info id="Structure" order="1" sideWeight="0.5037594" side_tool="true" weight="0.28290468" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -359,7 +427,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6877133" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5460751" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5392491" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32935154" />
@@ -389,6 +457,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="elasticsearch" />
     <option name="LAST_COMMIT_MESSAGE" value="elasticsearch" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/controller/ElController.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/springcloud_zuul/pom.xml">
@@ -612,16 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/config/ElRestClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/consumer/controller/ConsumerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -639,40 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/controller/ElController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2058">
-          <caret line="98" column="58" selection-start-line="98" selection-start-column="58" selection-end-line="98" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/model/HighLevelRestClientObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/impl/ElClientServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1911">
-          <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/ElClientService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -693,17 +733,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_provider/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/server_provider/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="438">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/config/ElRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_provider/src/main/java/com/wjb/provider/Application_Provider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="210">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#340#341#0" expanded="true" />
@@ -712,28 +762,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_provider/pom.xml">
+    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/Application_Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="147">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/ElClientService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/service/impl/ElClientServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_provider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_consumer/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="21">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/Application_Consumer.java">
+    <entry file="file://$PROJECT_DIR$/server_consumer/src/main/java/com/wjb/elasticsearch/controller/ElController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="10">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -790,7 +870,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>springcloud_zuul</last-edited>
+          <last-edited>server_consumer</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

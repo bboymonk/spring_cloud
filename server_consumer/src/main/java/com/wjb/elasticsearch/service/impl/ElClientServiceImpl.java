@@ -20,6 +20,7 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -78,22 +79,24 @@ public class ElClientServiceImpl<T> implements ElClientService<T> {
     }
 
     @Override
-    public PageResult search(HighLevelRestClientObject qo) throws Exception {
-        QueryBuilder matchQueryBuilder = QueryBuilders.matchQuery("1", "kimchy")
+    public List<String> search(HighLevelRestClientObject qo,String index) throws Exception {
+        List<String> list = new ArrayList<>();
+        QueryBuilder matchQueryBuilder = QueryBuilders.matchQuery("1", qo.getKeyword())
                                                         .fuzziness(Fuzziness.AUTO)
                                                         .prefixLength(3)
                                                         .maxExpansions(10);
-        SearchSourceBuilder sourceBuilder = hlrcObject.createSearchSourceBuilder().query(matchQueryBuilder);
+        SearchSourceBuilder sourceBuilder = hlrcObject.createSearchSourceBuilder().query(QueryBuilders.matchAllQuery());
         SearchRequest searchRequest = new SearchRequest();
-        searchRequest.indices("posts");
+        searchRequest.indices(index);
         searchRequest.source(sourceBuilder);
         SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
         SearchHits hits = searchResponse.getHits();
         SearchHit[] searchHits = hits.getHits();
         for (SearchHit hit : searchHits) {
-            hit.getSourceAsString()
+            String sourceAsString = hit.getSourceAsString();
+            list.add(sourceAsString);
         }
-        return null;
+        return list;
     }
 
 

@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -98,8 +99,8 @@ public class ElController {
         try {
             HighLevelRestClientObject highLevelRestClientObject = new HighLevelRestClientObject();
             highLevelRestClientObject.setKeyword(keyWord);
-            PageResult search = elClientService.search(highLevelRestClientObject);
-            return null;
+            List<String> search = elClientService.search(highLevelRestClientObject,index);
+            return search.toString();
         } catch (Exception e) {
             logger.error("get index error",e);
             return "null";
